@@ -1,0 +1,119 @@
+*{
+box-sizing: border-box;
+font-family: 'Cairo', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.page {
+    background-color: hsl(30, 38%, 92%);
+    height: 100Vh;
+    width: 100vw;
+    padding-top: 50px;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.main {
+display: flex;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+.container .main div {
+    width: 50%;
+}
+.container .image {
+    background-image: url("/image/image-product-desktop.jpg");
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+}
+.container .text {
+    background-color: white;
+    padding: 25px;
+    text-transform: capitalize;
+    border-radius: 0 8px 8px 0;
+}
+.container .text .f-1 {
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.container .text p:first-of-type {
+color: hsl(228, 12%, 48%);
+text-transform: capitalize;
+line-height: 1.5;
+font-size: 14px;
+}
+.big {
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    padding-right: 15px;
+}
+input {
+    width: 95%;
+    background-color: hsl(158, 36%, 37%);
+    text-transform: capitalize;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+}
+.d1-1 del{
+    color: hsl(228, 12%, 48%);
+}
+.d1-1 {
+margin-top: 10px;
+}
+svg {
+    position: relative;
+    bottom: -47px;
+    left: 51px;
+}
+@media (max-width:375px){
+    .page {
+        padding-top: 22.5px;
+        padding-bottom: 22.5px;
+    }
+    .main {
+        flex-direction: column;
+        height: 90vh;
+        align-items: center;
+    }
+    .container .main div{
+        width: calc(100% - 40px);
+    }
+    .container .image {
+        background-image: url("/image/image-product-mobile.jpg");
+        height: 100%;
+        border-radius: 8px 8px 0 0;
+        }
+    h1 {
+        font-size: 30px;
+    }
+    .container .text {
+        border-radius: 0 0 6px 6px;
+        padding: 15px;
+        border-radius: 0 0 6px 6px;
+
+    }
+    svg {
+        left: 75px;
+    }
+}
+@media (min-width:376px){
+    .main {
+        width: 600px;
+    }
+}
