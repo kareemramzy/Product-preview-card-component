@@ -33,7 +33,7 @@ transform: translateY(-50%);
     width: 50%;
 }
 .container .image {
-    background-image: url("/image/image-product-desktop.jpg");
+    background-image: url("./image./image-product-desktop.jpg");
     background-size: cover;
     border-radius: 8px 0 0 8px;
 }
@@ -95,7 +95,7 @@ svg {
         width: calc(100% - 40px);
     }
     .container .image {
-        background-image: url("/image/image-product-mobile.jpg");
+        background-image: url("./image./image-product-mobile.jpg");
         height: 100%;
         border-radius: 8px 8px 0 0;
         }
