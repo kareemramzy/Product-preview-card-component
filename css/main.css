@@ -33,7 +33,7 @@ transform: translateY(-50%);
     width: 50%;
 }
 .container .image {
-    background-image: url("./image/image-product-desktop.jpg");
+    background-image: url("./Product-preview-card-component/image/image-product-desktop.jpg");
     background-size: cover;
     border-radius: 8px 0 0 8px;
 }
